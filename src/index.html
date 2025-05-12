@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self';">
+  <title>Audiobook Generator</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <div class="logo">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <circle cx="12" cy="12" r="10" fill="#26c281"></circle>
+          <path d="M8 12l3 3 5-5" stroke="white" stroke-width="2" fill="none"></path>
+        </svg>
+        <h1>Audiobook Generator</h1>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search projects...">
+      </div>
+    </header>
+    
+    <div class="main-content">
+      <div class="sidebar">
+        <div class="tools">
+          <h2>Tools</h2>
+          <div class="tool-buttons">
+            <button class="tool-button">
+              <span class="icon">📥</span>
+              <span>Import</span>
+            </button>
+            <button class="tool-button">
+              <span class="icon">📝</span>
+              <span>Editor</span>
+            </button>
+            <button class="tool-button">
+              <span class="icon">🎙️</span>
+              <span>Voices</span>
+            </button>
+            <button class="tool-button">
+              <span class="icon">📤</span>
+              <span>Export</span>
+            </button>
+          </div>
+        </div>
+        
+        <div class="recent-projects">
+          <h2>Recent Projects</h2>
+          <div class="project-list">
+            <!-- Projects will be populated here via JavaScript -->
+            <div class="empty-state">No recent projects</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="content-area">
+        <div class="welcome-screen">
+          <h2>Welcome to Audiobook Generator</h2>
+          <p>Create high-quality audiobooks from your text files using AI-powered text-to-speech.</p>
+          
+          <div class="actions">
+            <button class="primary-button">
+              <span class="icon">➕</span>
+              <span>New Audiobook</span>
+            </button>
+            <button class="secondary-button">
+              <span class="icon">📖</span>
+              <span>Open Project</span>
+            </button>
+          </div>
+          
+          <div class="features">
+            <div class="feature">
+              <div class="feature-icon">🔊</div>
+              <h3>High-Quality Voices</h3>
+              <p>Lifelike voices powered by Kokoro TTS technology</p>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">🤖</div>
+              <h3>AI Character Detection</h3>
+              <p>Automatically identify characters using Gemini AI</p>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">🎭</div>
+              <h3>Voice Customization</h3>
+              <p>Adjust pitch, speed, and emotion for each character</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="./renderer.js"></script>
+</body>
+</html> 

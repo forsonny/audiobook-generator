@@ -1,0 +1,11 @@
+# Task ID: 12
+# Title: Implement API Key Management and Security
+# Status: pending
+# Dependencies: 1
+# Priority: medium
+# Description: Securely manage API keys for Gemini and other services.
+# Details:
+Store API keys in system keychain. Add UI for key input and validation. Handle authentication failures gracefully.
+
+# Test Strategy:
+Test secure storage, UI input, and error handling for API keys.

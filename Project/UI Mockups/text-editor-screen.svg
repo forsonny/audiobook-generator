@@ -1,0 +1,233 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#F5F7FA" />
+  
+  <!-- Left Panel: Navigation Sidebar -->
+  <rect x="0" y="0" width="250" height="800" fill="#FFFFFF" />
+  
+  <!-- Project Selector -->
+  <rect x="20" y="20" width="210" height="50" rx="8" fill="#19BE82" />
+  <text x="70" y="50" font-family="Inter, sans-serif" font-size="16" fill="white" font-weight="600">Pride and Prejudice</text>
+  <circle cx="45" cy="45" r="15" fill="white" opacity="0.3" />
+  <path d="M45 50 L52 43 L45 36 L38 43 Z" fill="white" />
+  
+  <!-- Search Bar -->
+  <rect x="20" y="90" width="210" height="40" rx="8" fill="#F5F7FA" />
+  <text x="55" y="115" font-family="Inter, sans-serif" font-size="14" fill="#64748B">Search projects...</text>
+  <circle cx="40" cy="110" r="10" fill="none" stroke="#64748B" stroke-width="1.5" />
+  <line x1="48" y1="118" x2="52" y2="122" stroke="#64748B" stroke-width="1.5" />
+  
+  <!-- Section Header: Tools -->
+  <text x="20" y="160" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#1E293B">Tools</text>
+  <path d="M25 152 L35 152 L30 158 Z" fill="#1E293B" />
+  
+  <!-- Tools Grid -->
+  <rect x="20" y="180" width="100" height="80" rx="8" fill="white" stroke="#E2E8F0" stroke-width="1" />
+  <rect x="130" y="180" width="100" height="80" rx="8" fill="#19BE82" opacity="0.1" stroke="#19BE82" stroke-width="2" />
+  <rect x="20" y="270" width="100" height="80" rx="8" fill="white" stroke="#E2E8F0" stroke-width="1" />
+  <rect x="130" y="270" width="100" height="80" rx="8" fill="white" stroke="#E2E8F0" stroke-width="1" />
+  
+  <!-- Tool Icons and Labels -->
+  <circle cx="70" cy="215" r="15" fill="#F5F7FA" />
+  <text x="70" y="250" font-family="Inter, sans-serif" font-size="14" fill="#1E293B" text-anchor="middle">Import</text>
+  
+  <rect x="165" y="200" width="30" height="30" rx="4" fill="#19BE82" opacity="0.2" />
+  <text x="180" y="250" font-family="Inter, sans-serif" font-size="14" fill="#19BE82" font-weight="600" text-anchor="middle">Editor</text>
+  
+  <rect x="55" y="290" width="30" height="30" rx="15" fill="#F5F7FA" />
+  <text x="70" y="340" font-family="Inter, sans-serif" font-size="14" fill="#1E293B" text-anchor="middle">Voices</text>
+  
+  <path d="M180 290 L165 305 L175 305 L175 315 L185 315 L185 305 L195 305 Z" fill="#F5F7FA" />
+  <text x="180" y="340" font-family="Inter, sans-serif" font-size="14" fill="#1E293B" text-anchor="middle">Export</text>
+  
+  <!-- Chapters -->
+  <text x="20" y="390" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#1E293B">Chapters</text>
+  <rect x="195" y="380" width="35" height="20" rx="10" fill="#E2E8F0" />
+  <text x="210" y="395" font-family="Inter, sans-serif" font-size="12" fill="#64748B" text-anchor="middle">27</text>
+  <path d="M25 382 L35 382 L30 388 Z" fill="#1E293B" />
+  
+  <!-- Chapter List -->
+  <rect x="20" y="410" width="210" height="50" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+  <text x="45" y="440" font-family="Inter, sans-serif" font-size="14" fill="#1E293B">Chapter 1</text>
+  <rect x="170" y="425" width="40" height="20" rx="10" fill="#19BE82" />
+  <text x="190" y="440" font-family="Inter, sans-serif" font-size="12" fill="white" text-anchor="middle">Done</text>
+  
+  <rect x="20" y="470" width="210" height="50" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+  <text x="45" y="500" font-family="Inter, sans-serif" font-size="14" fill="#1E293B">Chapter 2</text>
+  <rect x="170" y="485" width="40" height="20" rx="10" fill="#19BE82" />
+  <text x="190" y="500" font-family="Inter, sans-serif" font-size="12" fill="white" text-anchor="middle">Done</text>
+  
+  <rect x="20" y="530" width="210" height="50" rx="8" fill="#19BE82" opacity="0.1" stroke="#19BE82" stroke-width="2" />
+  <text x="45" y="560" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#1E293B">Chapter 3</text>
+  <rect x="170" y="545" width="40" height="20" rx="10" fill="#FF9F5A" />
+  <text x="190" y="560" font-family="Inter, sans-serif" font-size="12" fill="white" text-anchor="middle">Active</text>
+  
+  <rect x="20" y="590" width="210" height="50" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+  <text x="45" y="620" font-family="Inter, sans-serif" font-size="14" fill="#1E293B">Chapter 4</text>
+  <rect x="170" y="605" width="40" height="20" rx="10" fill="#E2E8F0" />
+  <text x="190" y="620" font-family="Inter, sans-serif" font-size="12" fill="#64748B" text-anchor="middle">Pending</text>
+  
+  <rect x="20" y="650" width="210" height="50" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+  <text x="45" y="680" font-family="Inter, sans-serif" font-size="14" fill="#1E293B">Chapter 5</text>
+  <rect x="170" y="665" width="40" height="20" rx="10" fill="#E2E8F0" />
+  <text x="190" y="680" font-family="Inter, sans-serif" font-size="12" fill="#64748B" text-anchor="middle">Pending</text>
+  
+  <!-- Center Panel: Text Editor -->
+  <rect x="250" y="0" width="650" height="800" fill="#FFFFFF" />
+  
+  <!-- Editor Header -->
+  <rect x="250" y="0" width="650" height="60" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+  <text x="280" y="35" font-family="Inter, sans-serif" font-size="18" font-weight="600" fill="#1E293B">Chapter 3</text>
+  
+  <!-- View Controls -->
+  <rect x="420" y="15" width="150" height="30" rx="15" fill="#F5F7FA" />
+  <rect x="420" y="15" width="75" height="30" rx="15" fill="#19BE82" />
+  <text x="457" y="35" font-family="Inter, sans-serif" font-size="12" fill="white" font-weight="500" text-anchor="middle">Original</text>
+  <text x="532" y="35" font-family="Inter, sans-serif" font-size="12" fill="#64748B" text-anchor="middle">Processed</text>
+  
+  <!-- Search in Text -->
+  <rect x="600" y="15" width="150" height="30" rx="15" fill="#F5F7FA" />
+  <text x="640" y="35" font-family="Inter, sans-serif" font-size="12" fill="#64748B">Search in text...</text>
+  <circle cx="620" cy="30" r="8" fill="none" stroke="#64748B" stroke-width="1" />
+  <line x1="626" y1="36" x2="628" y2="38" stroke="#64748B" stroke-width="1" />
+  
+  <!-- Progress Bar -->
+  <rect x="750" y="30" width="120" height="8" rx="4" fill="#E2E8F0" />
+  <rect x="750" y="30" width="40" height="8" rx="4" fill="#19BE82" />
+  
+  <!-- Text Content -->
+  <rect x="280" y="80" width="590" height="640" rx="8" fill="white" stroke="#E2E8F0" stroke-width="1" />
+  
+  <!-- Paragraph -->
+  <text x="300" y="120" font-family="Inter, sans-serif" font-size="14" fill="#1E293B">Not all that Mrs. Bennet, however, with the assistance of her five daughters, could ask on the subject, was sufficient to draw from her husband any satisfactory description of Mr. Bingley. They attacked him in various ways—with barefaced questions, ingenious suppositions, and distant surmises; but he eluded the skill of them all, and they were at last obliged to accept the second-hand intelligence of their neighbour, Lady Lucas.</text>
+  
+  <!-- Dialogue -->
+  <text x="300" y="220" font-family="Inter, sans-serif" font-size="14" fill="#5ABAFF" font-weight="500">"If I can but see one of my daughters happily settled at Netherfield,"</text>
+  <text x="643" y="220" font-family="Inter, sans-serif" font-size="14" fill="#1E293B"> said Mrs. Bennet to her husband, </text>
+  <text x="300" y="240" font-family="Inter, sans-serif" font-size="14" fill="#5ABAFF" font-weight="500">"and all the others equally well married, I shall have nothing to wish for."</text>
+  
+  <!-- Character Tag -->
+  <rect x="300" y="255" width="110" height="20" rx="4" fill="#6C63FF" opacity="0.1" />
+  <text x="355" y="270" font-family="Inter, sans-serif" font-size="12" fill="#6C63FF" font-weight="500" text-anchor="middle">Mrs. Bennet</text>
+  
+  <!-- AI Confidence Indicator -->
+  <rect x="420" y="255" width="70" height="20" rx="4" fill="#19BE82" opacity="0.1" />
+  <text x="455" y="270" font-family="Inter, sans-serif" font-size="12" fill="#19BE82" font-weight="500" text-anchor="middle">96%</text>
+  
+  <!-- Paragraph -->
+  <text x="300" y="310" font-family="Inter, sans-serif" font-size="14" fill="#1E293B">In a few days Mr. Bingley returned Mr. Bennet's visit, and sat about ten minutes with him in his library. He had entertained hopes of being admitted to a sight of the young ladies, of whose beauty he had heard much; but he saw only the father. The ladies were somewhat more fortunate, for they had the advantage of ascertaining from an upper window that he wore a blue coat, and rode a black horse.</text>
+  
+  <!-- Dialogue -->
+  <text x="300" y="410" font-family="Inter, sans-serif" font-size="14" fill="#1E293B">An invitation to dinner was soon afterwards dispatched; and already had Mrs. Bennet planned the courses that were to do credit to her housekeeping, when an answer arrived which deferred it all. Mr. Bingley was obliged to be in town the following day, and, consequently, unable to accept the honour of their invitation, etc. Mrs. Bennet was quite disconcerted. She could not imagine what business he could have in town so soon after his arrival in Hertfordshire; and she began to fear that he might be always flying about from one place to another, and never settled at Netherfield as he ought to be. Lady Lucas quieted her fears a little by starting the idea of his being gone to London only to get a large party for the ball; and a report soon followed that Mr. Bingley was to bring twelve ladies and seven gentlemen with him to the assembly. The girls grieved over such a number of ladies, but were comforted the day before the ball by hearing, that instead of twelve he brought only six with him from London—his five sisters and a cousin. And when the party entered the assembly room it consisted of only five altogether—Mr. Bingley, his two sisters, the husband of the eldest, and another young man.</text>
+  
+  <!-- Dialogue -->
+  <text x="300" y="610" font-family="Inter, sans-serif" font-size="14" fill="#5ABAFF" font-weight="500">"If I known as much,"</text>
+  <text x="415" y="610" font-family="Inter, sans-serif" font-size="14" fill="#1E293B"> said her husband, </text>
+  <text x="533" y="610" font-family="Inter, sans-serif" font-size="14" fill="#5ABAFF" font-weight="500">"I would have gone to see him myself."</text>
+  
+  <!-- Character Tag -->
+  <rect x="300" y="625" width="110" height="20" rx="4" fill="#6C63FF" opacity="0.1" />
+  <text x="355" y="640" font-family="Inter, sans-serif" font-size="12" fill="#6C63FF" font-weight="500" text-anchor="middle">Mr. Bennet</text>
+  
+  <!-- AI Confidence Indicator -->
+  <rect x="420" y="625" width="70" height="20" rx="4" fill="#19BE82" opacity="0.1" />
+  <text x="455" y="640" font-family="Inter, sans-serif" font-size="12" fill="#19BE82" font-weight="500" text-anchor="middle">92%</text>
+  
+  <!-- Editor Footer -->
+  <rect x="250" y="740" width="650" height="60" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+  
+  <!-- Page Navigation -->
+  <rect x="280" y="750" width="40" height="40" rx="8" fill="#F5F7FA" />
+  <path d="M300 760 L290 770 L300 780" fill="none" stroke="#64748B" stroke-width="1.5" />
+  
+  <rect x="330" y="750" width="100" height="40" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+  <text x="380" y="775" font-family="Inter, sans-serif" font-size="14" fill="#1E293B" text-anchor="middle">Page 3 of 8</text>
+  
+  <rect x="440" y="750" width="40" height="40" rx="8" fill="#F5F7FA" />
+  <path d="M450 760 L460 770 L450 780" fill="none" stroke="#64748B" stroke-width="1.5" />
+  
+  <!-- Action Buttons -->
+  <rect x="600" y="750" width="120" height="40" rx="8" fill="#FFFFFF" stroke="#19BE82" stroke-width="2" />
+  <text x="660" y="775" font-family="Inter, sans-serif" font-size="14" fill="#19BE82" font-weight="500" text-anchor="middle">Save Edits</text>
+  
+  <rect x="730" y="750" width="150" height="40" rx="8" fill="#19BE82" />
+  <text x="805" y="775" font-family="Inter, sans-serif" font-size="14" fill="white" font-weight="500" text-anchor="middle">Process Chapter</text>
+  
+  <!-- Right Panel: Analysis Settings -->
+  <rect x="900" y="0" width="300" height="800" fill="#FFFFFF" />
+  
+  <!-- Settings Header -->
+  <rect x="900" y="0" width="300" height="60" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+  <text x="930" y="35" font-family="Inter, sans-serif" font-size="18" font-weight="600" fill="#1E293B">Text Analysis</text>
+  
+  <!-- Tabs -->
+  <rect x="900" y="60" width="300" height="40" fill="#F5F7FA" />
+  <rect x="900" y="60" width="100" height="40" fill="#FFFFFF" />
+  <text x="950" y="85" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#19BE82" text-anchor="middle">Dialogue</text>
+  <text x="1050" y="85" font-family="Inter, sans-serif" font-size="14" fill="#64748B" text-anchor="middle">Characters</text>
+  <text x="1150" y="85" font-family="Inter, sans-serif" font-size="14" fill="#64748B" text-anchor="middle">Settings</text>
+  
+  <!-- Analysis Stats -->
+  <rect x="920" y="120" width="260" height="100" rx="8" fill="#F5F7FA" />
+  
+  <!-- Stats Content -->
+  <text x="940" y="145" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#1E293B">Analysis Summary</text>
+  
+  <text x="940" y="175" font-family="Inter, sans-serif" font-size="12" fill="#64748B">Dialogue Segments:</text>
+  <text x="1140" y="175" font-family="Inter, sans-serif" font-size="12" fill="#1E293B" font-weight="500">12</text>
+  
+  <text x="940" y="195" font-family="Inter, sans-serif" font-size="12" fill="#64748B">Characters Speaking:</text>
+  <text x="1140" y="195" font-family="Inter, sans-serif" font-size="12" fill="#1E293B" font-weight="500">5</text>
+  
+  <text x="940" y="215" font-family="Inter, sans-serif" font-size="12" fill="#64748B">AI Confidence:</text>
+  <rect x="1110" y="205" width="100" height="10" rx="5" fill="#E2E8F0" />
+  <rect x="1110" y="205" width="90" height="10" rx="5" fill="#19BE82" />
+  <text x="1170" y="215" font-family="Inter, sans-serif" font-size="12" fill="#1E293B" font-weight="500">90%</text>
+  
+  <!-- Characters in Chapter -->
+  <text x="920" y="250" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#1E293B">Characters in Chapter</text>
+  
+  <!-- Character Items -->
+  <rect x="920" y="270" width="260" height="60" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+  <text x="980" y="295" font-family="Inter, sans-serif" font-size="14" font-weight="500" fill="#1E293B">Mrs. Bennet</text>
+  <text x="980" y="315" font-family="Inter, sans-serif" font-size="12" fill="#64748B">4 dialogue lines</text>
+  <circle cx="945" cy="300" r="15" fill="#19BE82" opacity="0.2" />
+  <text x="945" y="305" font-family="Inter, sans-serif" font-size="12" fill="#19BE82" font-weight="600" text-anchor="middle">MB</text>
+  
+  <rect x="920" y="340" width="260" height="60" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+  <text x="980" y="365" font-family="Inter, sans-serif" font-size="14" font-weight="500" fill="#1E293B">Mr. Bennet</text>
+  <text x="980" y="385" font-family="Inter, sans-serif" font-size="12" fill="#64748B">3 dialogue lines</text>
+  <circle cx="945" cy="370" r="15" fill="#5ABAFF" opacity="0.2" />
+  <text x="945" y="375" font-family="Inter, sans-serif" font-size="12" fill="#5ABAFF" font-weight="600" text-anchor="middle">MB</text>
+  
+  <rect x="920" y="410" width="260" height="60" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+  <text x="980" y="435" font-family="Inter, sans-serif" font-size="14" font-weight="500" fill="#1E293B">Lady Lucas</text>
+  <text x="980" y="455" font-family="Inter, sans-serif" font-size="12" fill="#64748B">2 dialogue lines</text>
+  <circle cx="945" cy="440" r="15" fill="#FF9F5A" opacity="0.2" />
+  <text x="945" y="445" font-family="Inter, sans-serif" font-size="12" fill="#FF9F5A" font-weight="600" text-anchor="middle">LL</text>
+  
+  <!-- Dialogue Style -->
+  <text x="920" y="500" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#1E293B">Dialogue Styling</text>
+  
+  <!-- Style Controls -->
+  <rect x="920" y="520" width="260" height="40" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+  <text x="940" y="545" font-family="Inter, sans-serif" font-size="14" fill="#1E293B">Highlight Dialogue</text>
+  <rect x="1140" y="530" width="40" height="20" rx="10" fill="#19BE82" />
+  <circle cx="1170" cy="540" r="8" fill="white" />
+  
+  <rect x="920" y="570" width="260" height="40" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+  <text x="940" y="595" font-family="Inter, sans-serif" font-size="14" fill="#1E293B">Show Character Tags</text>
+  <rect x="1140" y="580" width="40" height="20" rx="10" fill="#19BE82" />
+  <circle cx="1170" cy="590" r="8" fill="white" />
+  
+  <rect x="920" y="620" width="260" height="40" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+  <text x="940" y="645" font-family="Inter, sans-serif" font-size="14" fill="#1E293B">Show AI Confidence</text>
+  <rect x="1140" y="630" width="40" height="20" rx="10" fill="#19BE82" />
+  <circle cx="1170" cy="640" r="8" fill="white" />
+  
+  <!-- Analysis Actions -->
+  <rect x="920" y="690" width="260" height="50" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+  <text x="1050" y="720" font-family="Inter, sans-serif" font-size="14" fill="#6C63FF" font-weight="500" text-anchor="middle">Run Gemini AI Analysis</text>
+  <circle cx="980" cy="720" r="15" fill="#6C63FF" opacity="0.2" />
+  <text x="980" y="725" font-family="Inter, sans-serif" font-size="14" fill="#6C63FF" font-weight="600" text-anchor="middle">AI</text>
+</svg>

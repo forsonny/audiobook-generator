@@ -1,0 +1,193 @@
+# Product Requirements Document: TTS Audiobook Application
+
+## 1. Introduction
+
+The TTS Audiobook Application is a desktop software designed to transform digital text-based books into high-quality audiobooks. It leverages advanced Text-to-Speech (TTS) technology, specifically the Kokoro TTS model, and integrates with the Google Gemini API for enhanced text analysis, character identification, and dialogue detection. The application aims to provide a user-friendly experience with a clean, modern interface, allowing users to import books in various formats, customize voices for characters and narration, and export complete audiobooks.
+
+## 2. Goals
+
+*   Develop a robust application for converting text to audiobooks.
+*   Provide high-quality audio output using the Kokoro TTS model.
+*   Utilize the Gemini API for intelligent text processing, including accurate character identification and dialogue/narration distinction.
+*   Offer a user-friendly interface for easy book import, voice customization, and audiobook generation.
+*   Support multiple input file formats (EPUB, PDF, TXT).
+*   Enable users to manage multiple audiobook projects efficiently.
+*   Ensure secure handling of API keys and user data.
+*   Provide offline functionality after initial setup and model downloads.
+
+## 3. Target Audience
+
+*   Individuals who prefer listening to books over reading text.
+*   Users with visual impairments or reading difficulties.
+*   Content creators looking to produce audiobook versions of their work.
+*   Students and professionals who want to consume written material in audio format.
+
+## 4. Proposed Solution
+
+A desktop application built with Electron for cross-platform compatibility (Windows, macOS, Linux). The application will feature:
+
+*   **Frontend:** React/Vue for a component-based UI, Electron IPC for backend communication.
+*   **Backend:** Python with Flask/FastAPI, NLP libraries (spaCy/NLTK), Hugging Face Transformers for Kokoro TTS, and PyDub/FFmpeg for audio processing.
+*   **Data Storage:** SQLite for local database (projects, settings, metadata) and local file system for book files and generated audio.
+*   **Gemini API Integration:** For advanced character identification, dialogue detection, contextual analysis, book genre/style detection, and AI-generated character profiles.
+
+## 5. Key Features
+
+### 5.1. Book Import and Parsing
+    *   **Description:** Allow users to import books in EPUB, PDF, and TXT formats. Extract clean, structured text content while preserving chapter and paragraph structure.
+    *   **Requirements:**
+        *   Support for .txt (UTF-8), EPUB (2 & 3), and PDF (text content).
+        *   Interactive file selection and drag-and-drop.
+        *   Content preview before import.
+        *   Progress indication and error handling for imports.
+        *   Automatic project creation with metadata extraction (title, author).
+
+### 5.2. Dialogue and Narration Identification (with Gemini Integration)
+    *   **Description:** Automatically distinguish between dialogue and narration with high accuracy using a hybrid approach (rule-based and Gemini API).
+    *   **Requirements:**
+        *   Advanced dialogue detection (including unquoted dialogue via Gemini).
+        *   Context-aware analysis via Gemini for implicit speech and narrative descriptions.
+        *   Intelligent text segmentation and sentence boundary detection (Gemini enhanced).
+        *   User interface for manual correction of segments, with feedback to Gemini.
+
+### 5.3. Character Identification (with Gemini API)
+    *   **Description:** Leverage Gemini API to identify characters, their roles, descriptions, and assign dialogue segments to the correct speaker.
+    *   **Requirements:**
+        *   AI-powered character detection, including pronoun resolution and alias merging.
+        *   Contextual dialogue attribution using Gemini, with confidence scores.
+        *   Character registry with detailed profiles (AI-generated: gender, age, personality).
+        *   User interface for manual character management and correction of attributions.
+
+### 5.4. Voice Management and Assignment
+    *   **Description:** Allow users to select and customize Kokoro TTS voices for characters and the narrator.
+    *   **Requirements:**
+        *   Display available Kokoro TTS voices with preview functionality.
+        *   Map characters to specific voices with customizable parameters (pitch, speed, style).
+        *   Dedicated configuration for narrator voice and style.
+        *   Management of voice consistency and warnings for unassigned characters.
+
+### 5.5. Text-to-Speech (TTS) Integration (Kokoro TTS)
+    *   **Description:** Integrate the Kokoro TTS engine (hexgrad/Kokoro-82M) to convert text segments into high-quality speech.
+    *   **Requirements:**
+        *   Efficient download, initialization, and loading of the Kokoro TTS model.
+        *   Generation of speech audio applying assigned voice parameters.
+        *   Batch processing, asynchronous operations, and caching for performance.
+        *   Pre-synthesis text normalization and pause management.
+
+### 5.6. Audio File Management and Export
+    *   **Description:** Process, combine, and export generated audio segments into complete audiobooks.
+    *   **Requirements:**
+        *   Store and manage individual audio segments.
+        *   Concatenate segments into chapters/full audiobook with volume normalization.
+        *   Export in MP3 and M4A formats with chapter markers and metadata.
+        *   Playback capabilities for segments, chapters, and full audiobooks, synchronized with text.
+
+### 5.7. User Interface and Workflow
+    *   **Description:** Provide an intuitive three-panel UI (Navigation, Workspace, Settings) as per design specifications, guiding users through the audiobook creation process.
+    *   **Requirements:**
+        *   Clean, modern interface following the UI Design Specification.
+        *   Visual workflow representation with progress indicators.
+        *   Content editing interface with dialogue/narration highlighting and character assignment.
+        *   Project management features (creation, listing, selection).
+
+### 5.8. Project Management System (with Gemini Integration)
+    *   **Description:** Enable users to manage multiple audiobook projects, track progress, and handle project-specific settings, with AI-powered analysis.
+    *   **Requirements:**
+        *   Project creation, templates, and AI-powered genre/style detection (Gemini).
+        *   Library view with filtering, sorting, grouping, and advanced search.
+        *   Configurable AI processing levels (basic, standard, deep) with API usage tracking and caching.
+        *   Visual progress tracking with AI-assisted time estimates.
+        *   Project-specific settings for voices, processing history, and Gemini API configuration.
+
+### 5.9. API Key Management and Security
+    *   **Description:** Securely manage API keys for Google Gemini and other services.
+    *   **Requirements:**
+        *   Secure storage of API keys (system keychain).
+        *   User interface for API key input and validation.
+        *   Graceful handling of authentication failures.
+
+## 6. Technical Specifications Summary
+
+*   **Frontend:** Electron, React/Vue, HTML5, CSS3, JavaScript.
+*   **Backend:** Python 3.8+, Flask/FastAPI, spaCy/NLTK, Hugging Face Transformers.
+*   **TTS Engine:** Kokoro TTS (82M parameters from hexgrad/Kokoro-82M).
+*   **AI Integration:** Google Gemini API (character ID, dialogue detection, contextual analysis).
+*   **Audio Processing:** PyDub, FFmpeg.
+*   **Database:** SQLite.
+*   **File Formats (Input):** EPUB, PDF, TXT.
+*   **File Formats (Output):** MP3, M4A.
+*   **Deployment:** Local desktop application (Windows, macOS, Linux).
+
+## 7. Design Specifications Summary
+
+*   **Layout:** Three-panel design (Navigation, Workspace, Settings/Configuration) as detailed in "TTS Audiobook Application UI Design Specification.md".
+*   **Color Palette & Typography:** As defined in "TTS Audiobook Application UI Design Specification.md".
+*   **Key UI Components:** Project selector, tool grid, library, workflow visualization canvas, processing nodes, book content view, character list, voice selection, AI settings panel.
+*   **Interactivity:** Node selection, connection hovering, drag-and-drop, contextual menus, voice preview, real-time parameter adjustment.
+*   **Responsive Behavior:** Adaptable to desktop, laptop, and smaller screen sizes by collapsing panels.
+*   **Accessibility:** WCAG AA compliance for color contrast, full keyboard navigation, ARIA labels, text scaling support.
+
+## 8. Gemini API Integration Strategy
+
+*   **Character Identification:** Primary engine for identifying characters, names, aliases, roles, descriptions, gender, and speech patterns.
+*   **Dialogue and Narration Detection:** Enhance detection for complex literary styles, identify implicit speech.
+*   **Contextual Analysis:** Understand narrative context for accurate dialogue attribution.
+*   **Book Genre/Style Detection:** AI-powered classification of imported books.
+*   **Character Profiles:** Generate detailed character descriptions and relationship maps.
+*   **Caching:** Implement a robust caching system for API responses to optimize usage and costs.
+*   **API Key Management:** Secure storage and user-configurable API keys.
+*   **Fallback:** Local NLP methods (spaCy/NLTK) will serve as a fallback if Gemini API is unavailable or not configured.
+*   **User Feedback Loop:** Corrections made by users to AI-generated analysis will be used to refine prompts or inform future analysis where feasible.
+
+## 9. Non-Functional Requirements
+
+*   **Performance:**
+    *   Efficient processing of large book files.
+    *   Responsive UI, even during background processing.
+    *   Optimized TTS generation and audio export times.
+    *   Minimize memory and CPU usage.
+*   **Usability:**
+    *   Intuitive and easy-to-learn interface.
+    *   Clear feedback and progress indication.
+    *   Comprehensive error handling with user-friendly messages.
+*   **Reliability:**
+    *   Stable operation with minimal crashes.
+    *   Consistent audio output quality.
+    *   Robust error recovery and checkpointing for long processes.
+*   **Security:**
+    *   Secure storage of API keys.
+    *   Safe handling of user files and data.
+    *   Input validation to prevent vulnerabilities.
+*   **Maintainability:**
+    *   Modular code structure.
+    *   Well-documented codebase.
+    *   Comprehensive test suite (unit, integration, performance).
+*   **Scalability:**
+    *   Ability to handle books of varying sizes and complexity.
+    *   Efficient management of multiple projects.
+*   **Offline Capability:**
+    *   Core functionality (text processing, Kokoro TTS, audio export) available offline after initial setup and model download.
+    *   Gemini API-dependent features will require an internet connection.
+
+## 10. Assumptions
+
+*   Users will have a stable internet connection for initial setup, model downloads, and Gemini API usage.
+*   Users can obtain and configure their own Google Gemini API key.
+*   The Kokoro TTS model (hexgrad/Kokoro-82M) is suitable for the desired audio quality.
+
+## 11. Exclusions / Out of Scope (for initial version)
+
+*   Real-time collaborative editing.
+*   Cloud synchronization of projects across multiple devices.
+*   Support for scanned image-based PDFs or DRM-protected files.
+*   Advanced audio editing features beyond basic segment management.
+*   Translation services.
+*   Direct publishing to audiobook platforms.
+
+## 12. Success Metrics
+
+*   Number of successful audiobook generations.
+*   User satisfaction ratings (if feedback mechanism is implemented).
+*   Time taken to process and generate an average-length book.
+*   Accuracy of character and dialogue identification (compared to manual review).
+*   Low rate of reported bugs or crashes. 

@@ -1,0 +1,61 @@
+# Task ID: 5
+# Title: Implement Basic TTS Audio Generation
+# Status: pending
+# Dependencies: 4
+# Priority: high
+# Description: Generate speech audio from text segments using Kokoro TTS and assigned voice parameters, with enhanced text editing and audio visualization features. The implementation must match the exact visual layout and components shown in Project/UI Mockups/text-editor-screen.png. This includes the text editor with dialogue highlighting, character attribution tags, AI confidence percentages, chapter navigation, and text analysis panel. The waveform visualization, pagination controls, and editing tools must be implemented exactly as shown in the mockup.
+# Details:
+Implement batch processing of text segments. Apply voice parameters (pitch, speed, style) to TTS output. Store generated audio segments in local filesystem. Add progress indication. Integrate drag-and-drop chapter ordering functionality. Implement text highlighting for selected text. Support split-view editing mode with synchronized text and waveform views. Add automatic paragraph detection and formatting. Include support for custom CSS styling of the text editor. Implement find/replace functionality with regex support. Add support for custom user annotations. All UI and interaction must match the layout and components in Project/UI Mockups/text-editor-screen.png, including dialogue highlighting, character attribution tags, AI confidence percentages, chapter navigation, text analysis panel, waveform visualization, pagination controls, and editing tools.
+
+# Test Strategy:
+Test batch TTS generation with different voice parameters. Verify audio files are generated and stored correctly. Test drag-and-drop chapter ordering functionality. Verify text highlighting works correctly. Test split-view editing mode synchronization. Verify automatic paragraph detection. Test custom CSS styling application. Verify find/replace with regex support. Test custom user annotations functionality. Confirm that all UI elements and interactions match Project/UI Mockups/text-editor-screen.png, including dialogue highlighting, character attribution tags, AI confidence percentages, chapter navigation, text analysis panel, waveform visualization, pagination controls, and editing tools.
+
+# Subtasks:
+## 5.1. Implement core TTS audio generation [pending]
+### Dependencies: None
+### Description: Set up Kokoro TTS integration and implement basic text-to-speech conversion. Ensure the audio generation workflow and UI match the layout and components shown in Project/UI Mockups/text-editor-screen.png, including waveform visualization and editing tools.
+### Details:
+
+
+## 5.2. Implement drag-and-drop chapter ordering [pending]
+### Dependencies: None
+### Description: Create functionality to allow users to reorder chapters via drag-and-drop in the UI. The chapter navigation must match the appearance and behavior shown in Project/UI Mockups/text-editor-screen.png.
+### Details:
+
+
+## 5.3. Add text highlighting for selected text [pending]
+### Dependencies: None
+### Description: Implement highlighting functionality for selected text as shown in the mockups, including dialogue highlighting and character attribution tags as depicted in Project/UI Mockups/text-editor-screen.png.
+### Details:
+
+
+## 5.4. Implement split-view editing mode [pending]
+### Dependencies: None
+### Description: Create synchronized split-view with text editor and waveform visualization, matching the layout and interaction shown in Project/UI Mockups/text-editor-screen.png.
+### Details:
+
+
+## 5.5. Add automatic paragraph detection [pending]
+### Dependencies: None
+### Description: Implement automatic detection and formatting of paragraphs in imported text. Ensure paragraph formatting and display match the mockup in Project/UI Mockups/text-editor-screen.png.
+### Details:
+
+
+## 5.6. Support custom CSS styling [pending]
+### Dependencies: None
+### Description: Add support for applying custom CSS styles to the text editor, ensuring compatibility with the visual requirements in Project/UI Mockups/text-editor-screen.png.
+### Details:
+
+
+## 5.7. Implement find/replace with regex [pending]
+### Dependencies: None
+### Description: Create find/replace functionality with support for regular expressions, matching the UI and controls as shown in Project/UI Mockups/text-editor-screen.png.
+### Details:
+
+
+## 5.8. Add custom user annotations [pending]
+### Dependencies: None
+### Description: Implement support for users to add and manage custom annotations in the text, ensuring annotation display and controls match Project/UI Mockups/text-editor-screen.png.
+### Details:
+
+

@@ -1,0 +1,11 @@
+# Task ID: 2
+# Title: Design and Implement Core UI Structure
+# Status: pending
+# Dependencies: 1
+# Priority: high
+# Description: Implement the three-panel UI layout (Navigation, Workspace, Settings) as per design specifications.
+# Details:
+Use React/Vue to create the main application window with three panels. Implement responsive behavior, color palette, and typography as specified. Add basic navigation and settings panels with placeholder content.
+
+# Test Strategy:
+Manual UI review and automated snapshot testing to ensure layout matches design specs. Test responsive behavior on different screen sizes.

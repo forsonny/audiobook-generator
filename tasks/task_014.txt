@@ -1,0 +1,11 @@
+# Task ID: 14
+# Title: Implement Accessibility Features
+# Status: pending
+# Dependencies: 2
+# Priority: medium
+# Description: Ensure UI is accessible (WCAG AA compliance, keyboard navigation, ARIA labels, text scaling).
+# Details:
+Add ARIA labels, keyboard navigation, and support for text scaling. Test color contrast and accessibility features.
+
+# Test Strategy:
+Manual and automated accessibility testing (axe-core, Lighthouse).
