@@ -80,4 +80,29 @@ Thumbs.db
 # Project specific
 temp/
 cache/
-projects/ 
+projects/
+
+# Dot folders
+.cursor/
+.obsidian/
+.roo/
+.windsurfrules
+
+# Project design and documentation
+Project/
+
+# Taskmaster
+tasks/
+.taskmasterconfig
+.roomodes
+
+# Git bundles
+*.bundle
+
+# Python virtual environment
+.venv/
+venv/
+
+# Temporary files
+*.tmp
+*~ 
